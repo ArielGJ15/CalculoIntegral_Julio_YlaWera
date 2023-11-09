@@ -1,8 +1,9 @@
 body {
-    /*background-image: url('fondo.png');
+    background-image: url('Fondo.png');
     background-size: cover;
-    background-repeat: no-repeat;*/
-    background-color: white;
+    background-repeat: no-repeat;
+
+
 }
 
 .bd-placeholder-img {
@@ -19,19 +20,15 @@ body {
     }
 }
 
-.btn {
-    background-color: blueviolet;
-    color: white;
-    transition: background-color 0.3s, color 0.3s;
-}
+
 
 .btn:hover {
-    background-color: black;
+    background: linear-gradient(to right, #0079ff, #004fd7);
     color: white;
 }
 
 header {
-    background-color: rgb(29, 29, 129);
+    background-color: #004fd7;
     color: #fff;
     padding: 10px 0;
     position: fixed;
@@ -75,22 +72,19 @@ header {
 }
 
 .header-menu ul li a:hover {
-    color: blueviolet;
     font-size: 20px;
 }
 
 
 .bg-gray {
-    background-color: gray;
+    background-color: #35c3ff;
 }
 
-.text-white {
-    color: white;
-}
 
 .btn-blueviolet {
-    background-color: blueviolet;
-    color: white;
+    background-color: #d1f1ff;
+    color: #0060ff;
+    border-color: #0060ff;
     transition: background-color 0.3s;
 
 }
@@ -109,4 +103,9 @@ header {
 
 .text-with-gif img:hover {
     border-radius: 0;
+}
+
+/* Estilo para el Footer */
+footer {
+    background-color: #ebf8ff;
 }
