@@ -1,0 +1,112 @@
+body {
+    /*background-image: url('fondo.png');
+    background-size: cover;
+    background-repeat: no-repeat;*/
+    background-color: white;
+}
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+.btn {
+    background-color: blueviolet;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover {
+    background-color: black;
+    color: white;
+}
+
+header {
+    background-color: rgb(29, 29, 129);
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header-logo {
+    width: 100px;
+    height: auto;
+    border-radius: 100%;
+
+}
+
+.header-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.header-menu ul li {
+    margin-right: 20px;
+}
+
+.header-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.header-menu ul li a:hover {
+    color: blueviolet;
+    font-size: 20px;
+}
+
+
+.bg-gray {
+    background-color: gray;
+}
+
+.text-white {
+    color: white;
+}
+
+.btn-blueviolet {
+    background-color: blueviolet;
+    color: white;
+    transition: background-color 0.3s;
+
+}
+
+.text-with-gif {
+    display: flex;
+    align-items: center;
+}
+
+
+.text-with-gif img {
+    margin-left: 20px;
+    border-radius: 20%;
+    transition: border-radius 0.3s;
+}
+
+.text-with-gif img:hover {
+    border-radius: 0;
+}
