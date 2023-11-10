@@ -2,9 +2,6 @@ body {
     background-image: url('fondo.png');
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-	-ms-overflow-style: scrollbar;
-
 }
 
 .bd-placeholder-img {
@@ -106,7 +103,6 @@ header {
     border-radius: 0;
 }
 
-/* Estilo para el Footer */
 footer {
     background-color: #ebf8ff;
 }
