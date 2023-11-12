@@ -18,7 +18,7 @@
 
     <form class="login-form">
       <div class="textbox">
-        <input type="email" placeholder="Usuario, Correo o Telefono" />
+        <input id="USUARIO" type="email" placeholder="Usuario, Correo o Telefono" />
         <span class="material-symbols-outlined"> account_circle </span>
       </div>
       <div class="textbox">
@@ -31,7 +31,33 @@
   </div>
   <script>
     function redirectToPage() {
-      window.location.href = "/index/inicio/Presentacion.html";
+      var usu = document.getElementById("USUARIO").value;
+      if (usu === 'a') {
+        window.location.href = "/index/inicio/Presentacion.html";
+      }
+      else {
+        // ALERTA PERSONALIZADA
+        var alerta = document.createElement("div");
+        alerta.setAttribute("id", "miAlerta");
+        alerta.innerHTML = "Usuario incorrecto, corrige por favor";
+
+        // Aplicar estilos CSS a la alerta
+        alerta.style.position = "fixed";
+        alerta.style.top = "10px";
+        alerta.style.left = "50%";
+        alerta.style.transform = "translateX(-50%)";
+        alerta.style.padding = "10px";
+        alerta.style.backgroundColor = "#ff9999";
+        alerta.style.color = "#990000";
+        alerta.style.border = "1px solid #990000";
+        alerta.style.borderRadius = "5px";
+        alerta.style.zIndex = "9999";
+        // Agregar la alerta al cuerpo del documento
+        document.body.appendChild(alerta);
+        setTimeout(function () {
+          alerta.style.display = "none";
+        }, 2000);
+      }
     }
   </script>
 </body>
