@@ -1,3 +1,4 @@
 # CalculoIntegral_Julio_YlaWera
 Olis
-a
+Antes solo sabiamos dios y yo como funcionaba este proyecto, ahora solo dios :) 
+Mucha suerte querido <3
