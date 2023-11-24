@@ -7,64 +7,153 @@
     <title>Introducción al Cálculo Integral</title>
     <!-- Agrega enlaces a los archivos CSS de Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url("fondo.jpg");
+        }
 
+        .btn {
+            background-color: #438e96;
+        }
+
+        .cuchau {
+            background-color: #356169;
+        }
+
+        .informacion {
+
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        p {
+            border: 2px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+
+        h1,
+        h2 {
+            text-align: center;
+        }
+
+        a {
+            text-decoration: none;
+            color: blueviolet;
+        }
+
+        a:hover {
+            font-size: 16.7px;
+        }
+
+        body {
+            background-color: whitesmoke;
+        }
+
+        .header-logo {
+            width: 100px;
+            height: auto;
+            border-radius: 100%;
+
+        }
+    </style>
 </head>
 
 <body>
-    <p>Oli</p>
-    <header class="bg-primary text-white text-center py-5">
-        <h1>Introducción al Cálculo Integral</h1>
+    <header class=" text-white text-center py-3 cuchau">
+        <img src="logo.png" alt="Logo" class="header-logo">
+
+        <h1>¿Qué es el Cálculo Integral?</h1>
+
         <a href="/index/inicio_proy/inicio.html" class="btn btn-secondary">Regresar</a>
     </header>
 
-    <div class="container my-5">
-        <h2>¿Qué es el Cálculo Integral?</h2>
-        <p>
-            La idea básica del cálculo integral es encontrar el área bajo una curva. Para encontrarla exactamente,
-            podemos dividirla en un número infinito de rectángulos con bases infinitesimalmente pequeñas y sumar sus
-            áreas; ¡el cálculo es fantástico para trabajar con cosas infinitas! Esta idea de hecho es muy rica, y se
-            encuentra estrechamente relacionada con el cálculo diferencial, como verás en los próximos videos
-        </p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/WA_A1IjmocQ" frameborder="0"
-            allowfullscreen></iframe>
-    </div>
+    <main
+        style="margin: 200px; background-color: #356169d7; border-radius: 100px; margin-top: 1px; color: azure; margin-bottom: 1px;">
+        <div class="container my-5">
+            <h2>Definición y Concepto Básico</h2>
+            <p class="informacion">
+                El cálculo integral es una rama de las matemáticas que se ocupa de conceptos como el área bajo una
+                curva, la acumulación de cantidades y la inversa de la derivación. En esencia, busca comprender y
+                cuantificar el cambio continuo. La herramienta principal en el cálculo integral es la integral, que
+                tiene dos formas principales: la integral indefinida, que encuentra la antiderivada de una función,
+                y
+                la integral definida, que calcula el área bajo una curva en un intervalo específico.<br>
+
+            </p>
+            <center><iframe width="560" height="315" src="https://www.youtube.com/embed/WA_A1IjmocQ" frameborder="0"
+                    allowfullscreen></iframe></center>
+        </div>
 
 
-    <div class="container my-5">
-        <h2>Aplicaciones del Cálculo Integral</h2>
-        <p>
-            El cálculo integral tiene numerosas aplicaciones en la física, la ingeniería, la economía y otras
-            disciplinas. Se utiliza para resolver problemas que implican acumulación, acumulación de cambio y cambio
-            acumulado, como calcular áreas bajo curvas, encontrar volúmenes de sólidos y determinar tasas de cambio
-            instantáneo.
-        </p>
-    </div>
+        <div class="container my-5">
+            <h2> Integral Indefinida e Integral Definida</h2>
+            <p class="informacion">
 
-    <div class="container my-5">
-        <h2>Recursos Adicionales</h2>
-        <p>
-            Aquí te dejo algunos recursos en línea que podrían ayudarte a aprender cálculo integral:<br>
+                Integral Indefinida
+                <br>
+                La integral indefinida, denotada por ∫f(x)dx, representa una familia de funciones cuya derivada es
+                la<br>
+                función original f(x). Es esencialmente encontrar una función F(x) tal que F'(x) = f(x). Se añade
+                una<br>
+                constante arbitraria (llamada constante de integración) porque existen infinitas funciones con la
+                misma<br>
+                derivada.<br>
+                <br>
 
-            1. <a href="https://es.khanacademy.org/math/integral-calculus" target="_blank">[Khan Academy]</a>: Ofrece un
-            curso completo de cálculo integral que incluye integrales indefinidas, sumas de Riemann, integrales
-            definidas, problemas de aplicación y mucho más.<br>
+                Integral Definida<br>
+                <br>
+                La integral definida, representada por ∫[a, b] f(x)dx, calcula la acumulación de la función f(x) en
+                el<br>
+                intervalo [a, b]. Geométricamente, esto corresponde al área entre la curva y el eje x en ese
+                intervalo.<br>
+                La integral definida proporciona resultados numéricos con significado físico, como el trabajo
+                realizado<br>
+                o la distancia recorrida.
+            </p>
+        </div>
 
-            2. <a href="https://edutin.com/curso-de-calculo-integral-3469" target="_blank">[Edutin Academy]</a>:
-            Proporciona un curso de cálculo integral gratuito y certificado. Aprenderás a resolver problemas de
-            integrales, series y derivadas.<br>
+        <div class="container my-5">
+            <h2> Aplicaciones y Significado Práctico</h2>
+            <p class="informacion">
+                El cálculo integral tiene diversas aplicaciones en la física, la ingeniería y otras disciplinas.
+                Permite<br>
+                modelar y resolver problemas del mundo real, como calcular áreas, volúmenes, trabajar con tasas de<br>
+                cambio, y entender fenómenos de acumulación. Desde la velocidad y posición de un objeto en
+                movimiento<br>
+                hasta la determinación de probabilidades en estadísticas, el cálculo integral se convierte en una<br>
+                herramienta esencial para comprender y predecir el comportamiento de sistemas dinámicos y variables<br>
+                continuas. </p>
+        </div>
 
-            3. <a href="https://www.aprendematematicas.org.mx/course/calculo-integral/" target="_blank">[Aprende
-                Matemáticas]</a>: Este es un curso de cálculo integral (nivel bachillerato) acorde con los contenidos
-            del programa oficial de la Dirección General de Bachillerato (DGB) en México.<br>
+        <div class="container my-5">
+            <h2>Recursos Adicionales</h2>
+            <p class="recursos">
+                Aquí te dejo algunos recursos en línea que podrían ayudarte a aprender cálculo integral:<br>
 
-            4. <a href="https://www.udemy.com/course/aprende-calculo-integral-desde-cero/" target="_blank">[Udemy]</a>:
-            Ofrece un curso visual y práctico de cálculo integral desde cero.<br>
+                1. <a href=" https://es.khanacademy.org/math/integral-calculus" target="_blank">[Khan Academy]</a>:
+                Ofrece un
+                curso completo de cálculo integral que incluye integrales indefinidas, sumas de Riemann, integrales
+                definidas, problemas de aplicación y mucho más.<br>
 
-            Espero que estos recursos te sean de ayuda. ¡Buena suerte con tu aprendizaje!<br>
+                2. <a href="https://edutin.com/curso-de-calculo-integral-3469" target="_blank">[Edutin Academy]</a>:
+                Proporciona un curso de cálculo integral gratuito y certificado. Aprenderás a resolver problemas de
+                integrales, series y derivadas.<br>
 
+                3. <a href="https://www.aprendematematicas.org.mx/course/calculo-integral/" target="_blank">[Aprende
+                    Matemáticas]</a>: Este es un curso de cálculo integral (nivel bachillerato) acorde con los
+                contenidos
+                del programa oficial de la Dirección General de Bachillerato (DGB) en México.<br>
 
-        </p>
-    </div>
+                4. <a href="https://www.udemy.com/course/aprende-calculo-integral-desde-cero/"
+                    target="_blank">[Udemy]</a>:
+                Ofrece un curso visual y práctico de cálculo integral desde cero.<br>
+
+                Espero que estos recursos te sean de ayuda. ¡Buena suerte con tu aprendizaje!<br>
+            </p>
+        </div>
+    </main>
 
 
 </body>

@@ -2,6 +2,7 @@ body {
     background-image: url('fondo.png');
     background-size: cover;
     background-repeat: no-repeat;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .bd-placeholder-img {
@@ -67,10 +68,12 @@ header {
     color: #fff;
     text-decoration: none;
     transition: color 0.3s;
+    font-size: 30px;
 }
 
 .header-menu ul li a:hover {
-    font-size: 20px;
+    font-size: 35px;
+    color: black;
 }
 
 
