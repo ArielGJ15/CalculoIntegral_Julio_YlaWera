@@ -6,118 +6,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Integrales Definidas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        body {
-            background-color: #ffffff;
-        }
-
-        .header-logo {
-            width: 100px;
-            height: auto;
-            border-radius: 100%;
-
-        }
-
-        header {
-            text-align: center;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 10%;
-        }
-
-        .cuchau {
-            background-color: rgb(5, 6, 110);
-        }
-
-        .btnheader {
-            background-color: #44c767;
-            border-radius: 11px;
-            border: 3px solid #18ab29;
-            display: inline-block;
-            cursor: pointer;
-            color: #ffffff;
-            font-family: Arial;
-            font-size: 14px;
-            padding: 8px 8px;
-            text-decoration: none;
-        }
-
-        .btnheader:hover {
-            background-color: #5cbf2a;
-        }
-
-        .btnheader:active {
-            position: relative;
-            top: 1px;
-        }
-
-
-
-
-        p {
-            font-size: 15px;
-            text-align: justify;
-        }
-
-        .Boton {
-            box-shadow: inset 0px 1px 0px 0px #d9fbbe;
-            background: linear-gradient(to bottom, #b8e356 5%, #a5cc52 100%);
-            background-color: #b8e356;
-            border-radius: 6px;
-            border: 1px solid #83c41a;
-            display: inline-block;
-            cursor: pointer;
-            color: #ffffff;
-            font-family: Trebuchet MS;
-            font-size: 15px;
-            font-weight: bold;
-            font-style: italic;
-            padding: 14px 24px;
-            text-decoration: none;
-            text-shadow: 0px 1px 0px #86ae47;
-        }
-
-        .Boton:hover {
-            background: linear-gradient(to bottom, #a5cc52 5%, #b8e356 100%);
-            background-color: #a5cc52;
-        }
-
-        .Boton:active {
-            position: relative;
-            top: 1px;
-        }
-    </style>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+    <link rel="stylesheet" href="calculoIntegral.css">
 </head>
 
 <body>
-    <header class=" text-white text-center py-3 cuchau" style="margin-bottom: 0%">
+    <header class=" text-white text-center py-1 cuchau" style="margin-bottom: 0%">
         <img src="logo.png" alt="Logo" class="header-logo">
 
-        <h1>¿Qué es el Cálculo Integral?</h1>
+        <h2>¿Qué es el Cálculo Integral?</h2>
 
         <a href="/index/inicio_proy/inicio.html" class="btnheader">Regresar</a>
     </header>
-    <main style="background-color: black;">
-        <div class="container">
+    <main style="margin: 340px; background-color: #ffffff; margin-top: 1px; margin-bottom: 1px; ">
+        <div class="container" style="padding: 5%;">
             <br><br><br>
             <center>
                 <h2>Integrales Definidas. Ejercicios Resueltos paso a paso</h2>
+                <br><br>
             </center>
             <p class="preinformacion">
-                En esta lección, te voy a explicar <strong>qué es una integral definida y cómo se calcula</strong>. Para
+                En esta lección, te voy a explicar <strong>qué es una integral definida y cómo se calcula</strong>.
+                Para
                 ello, te
                 explicaré la regla de Barrow y veremos cómo aplicarla <br> paso a paso. Todo esto se ilustrará con
                 ejemplos y
                 ejercicios resueltos. <br><br>
 
-                Si has llegado hasta aquí, es probablemente porque hay algún ejercicio que no sabes resolver y necesitas
-                clases de matemáticas online. Después de leer esto, si deseas <br> que te ayude a resolverlo o que te
+                Si has llegado hasta aquí, es probablemente porque hay algún ejercicio que no sabes resolver y
+                necesitas
+                clases de matemáticas online. Después de leer esto, si deseas <br> que te ayude a resolverlo o que
+                te
                 aclare
                 alguna duda, puedes optar por dos cosas: seguir buscando por Internet o contactar conmigo para ir
                 directo al grano y ahorrarte tiempo. <br><br>
 
-                Lo que estás a punto de leer <strong>es solo un ejemplo</strong> de lo que puedo enseñarte con mi método
+                Lo que estás a punto de leer <strong>es solo un ejemplo</strong> de lo que puedo enseñarte con mi
+                método
                 para enseñar
                 matemáticas. Puedo guiarte paso a paso en la comprensión de cualquier duda que no entiendas. :)<br>
 
@@ -126,7 +51,10 @@
         </div>
 
 
-        <div class="container">
+        <center>
+            <h2>Integral Definida</h2>
+        </center>
+        <div class="container" style="padding: 5%;">
             <p> La <strong>integral definida</strong> de una función f(x), se define de la siguiente forma: <br></p>
             <center><img src="Resources/f(x).jpeg" alt="Definicion de F(x)"></center>
             <p>
@@ -140,7 +68,9 @@
             </p>
             <center><img src="Resources/Curva.png" alt="Curva"></center>
             <p>
-                Por tanto, la solución de la integral definida es un valor numérico, que siempre debe ser positivo y
+                Por tanto, la solución de la integral definida <strong>es un valor numérico</strong>, que
+                <strong>siempre debe
+                    ser positivo</strong> y
                 expresado en unidades cuadradas, ya que <br> realmente estamos calculando áreas. <br><br>
 
                 Las integrales definidas de calculan aplicando la regla de Barrow, que será lo que veremos a
@@ -148,12 +78,188 @@
             </p>
         </div>
 
+        <center>
+            <h2>Como Calcular Integrales Definidas: La regla de Barrow</h2>
+        </center>
 
-        <div class="container">
-            <p></p>
+        <div class="container" style="padding: 5%;">
+            <p>Vamos a ver ahora cómo calcular integrales definidas aplicando la regla de Barrow. <br><br>
+
+                Es necesario que sepas resolver integrales indefinidas, para poder resolver las integrales definidas. Si
+                no es tu caso, te recomendamos <a href="http://">contactar con uno de nuestros asesores!</a></p>
+            <h4>Regla de Barrow</h4><br>
+            <p>La regla de Barrow dice lo siguiente: <br><br>
+
+                La integral definida de una función f(x), contínua en el intervalo cerrado [a,b] es igual la diferencia
+                de los valores de su primitiva en los extremos superior e inferior del intervalo [a,b]:</p>
+            <center><img src="Resources/formula barrow.png" alt="Formula Barrow"></center>
+            <p>Donde F(x) es primitiva de f(x).
+
+                Para aplicar la regla de Barrow y calcular integrales definidas, seguimos por tanto los siguientes
+                pasos:
+
+
+            <ol>
+                <li> Obtener la primitiva de la función, calculando la integral indefinida correspondiente
+                </li>
+                <li> Obtener los valores del valor de la primitiva en cada límite integración
+                </li>
+                <li> Realizar la diferencia del <strong>valor la primitiva en el límite superior menos el valor de la
+                        primitiva
+                        en el límite inferior</strong> (F(b)-f(a))
+                </li>
+                <li> Operar y calcular el resultado
+                </li>
+            </ol>
+            Vamos a verlo más despacio con un ejemplo:
+
+            Calcular la siguiente integral definida:</p>
+
+            <center> <img src="Resources/integraldeejemplo.png" alt="Integral de ejemplo"></center> <br>
+            <p>En primer lugar calculamos la integral indefinida de la función, dejándola entre corchetes con los dos
+                límites de integración de esta forma: </p><br>
+            <center><img src="Resources/paso1.png" alt="paso 1"></center><br>
+            <p>Ahora hayamos el valor de la primitiva cuando x=3, sustituyendo la x por 3 y le restamos el valor de la
+                primitiva cuando x=-2, sustituyendo la x por -2:</p><br>
+            <center><img src="Resources/paso2.png" alt="paso 2"></center><br>
+            <p>Finalmente operamos y calculamos la solución:</p><br>
+            <center><img src="Resources/pasofinal.png" alt="paso 3"></center><br>
         </div>
 
+        <div class="container">
+            <center>
+                <h2>Ejercicios de ejemplo</h2>
+            </center>
+
+            <ol>
+                <li>
+                    <p><span class="math">\(\int_1^2 x \, dx = \)</span>
+                        <button id="e1-1" class="button" onclick="show2('e1-1');">Solución</button>
+                    </p>
+                </li>
+                <div id="sol-e1-1" style="display:none;">
+                    <p>Para resolverlo sumaremos más uno al exponente y el resultado lo usamos para dividir, de la
+                        siguiente manera:
+                    </p>
+                    <td align="center"><span class="math">\[\frac{x^{1+1}}{1+1}\, = \frac{x^2}{2}\]</span></td>
+                    <p>Y solo cambiamos x por cada limite de integracion:</p>
+                    <td align="center"><span class="math">\[\frac{2^2}{2}\, = \frac{1^2}{2}\, = \frac{3}{2}\]</span>
+                    </td>
+                </div>
+
+                <li>
+                    <p><span class="math">\(\int_1^2 3x \, dx = \)</span>
+                        <button id="e1-2" class="button" onclick="show2('e1-2');">Solución</button>
+                    </p>
+                </li>
+                <div id="sol-e1-2" style="display:none;">
+                    <p>Para resolverlo sumaremos más uno al exponente y el resultado lo usamos para dividir, de la
+                        siguiente manera:
+                    </p>
+                    <td align="center"><span class="math">\[\frac{3x^{1+1}}{1+1}\, = \frac{3x^2}{2}\]</span></td>
+                    <p>Y solo cambiamos x por cada limite de integracion:</p>
+                    <td align="center"><span class="math">\[\frac{3(2)^2}{2}\, = \frac{3(1)^2}{2}\, =
+                            \frac{9}{2}\]</span></td>
+                </div>
+
+                <li>
+                    <p><span class="math">\(\int_1^2\,\frac{3}{x} \,dx = \)</span>
+                        <button id="e1-3" class="button" onclick="show2('e1-3');">Solución</button>
+                    </p>
+                </li>
+                <div id="sol-e1-3" style="display:none;">
+                    <p>Si tenemos un numero natural siendo dividiendo por “x” podemos separarlos de la siguiente
+                        manera:
+                    </p>
+                    <td align="center"><span class="math">\[\int_\,\frac{3}{x} \, = \, 3 \int_\,\frac{1}{x}
+                            \]</span>
+                    </td>
+                    <p>Resolvemos:</p>
+                    <td align="center"><span class="math">\[3 \int_\,\frac{1}{x}\, = \, 3 \ln (\lvert x\rvert
+                            )\]</span>
+                    </td>
+                    <p>Y solo cambiamos x por cada limite de integracion:</p>
+                    <td align="center"><span class="math">\[3 \ln (\lvert 2\rvert )\, - \, 3 \ln (\lvert 1\rvert )
+                            \, =
+                            \, 3 \ln
+                            (\lvert 2\rvert )\]</span></td>
+                </div>
+
+                <li>
+                    <p><span class="math">\(\int_1^2 {3e^x} \, dx = \)</span>
+                        <button id="e1-4" class="button" onclick="show2('e1-4');">Solución</button>
+                    </p>
+                </li>
+                <div id="sol-e1-4" style="display:none;">
+                    <p>La integral de "<span class="math">\({3e^x}\)</span>" es la misma "<span
+                            class="math">\({3e^x}\)</span>"
+                        entonces solo lo pasamos directo:
+                    </p>
+                    <td align="center"><span class="math">\[\int_1^2 {3e^x} \, = \, {3e^x}\]</span></td>
+                    <p>Y solo cambiamos x por cada limite de integracion:</p>
+                    <td align="center"><span class="math">\[{3e^2}\, - \,{3e^1}\]</span></td>
+                </div>
+
+                <li>
+                    <p><span class="math">\(\int_1^2 {x^3} \, dx = \)</span>
+                        <button id="e1-5" class="button" onclick="show2('e1-5');">Solución</button>
+                    </p>
+                </li>
+                <div id="sol-e1-5" style="display:none;">
+                    <p>Para resolverlo sumaremos más uno al exponente y el resultado lo usamos para dividir, de la
+                        siguiente manera:
+                    </p>
+                    <td align="center"><span class="math">\[\frac{x^{3+1}}{3+1}\, = \frac{x^4}{4}\]</span></td>
+                    <p>Y solo cambiamos x por cada limite de integracion:</p>
+                    <td align="center"><span class="math">\[\frac{2^4}{4}\, - \,\frac{1^4}{4}\, = \,
+                            \frac{15}{4}\]</span></td>
+                </div>
+
+                <li>
+                    <p><span class="math">\(\int_1^2 {5} \, dx = \)</span>
+                        <button id="e1-6" class="button" onclick="show2('e1-6');">Solución</button>
+                    </p>
+                </li>
+                <div id="sol-e1-6" style="display:none;">
+                    <p>La integral de un numero natural es igual al número por “x”:
+                    </p>
+                    <td align="center"><span class="math">\[\int{5} \, = \, {5x}\]</span></td>
+                    <p>Y solo cambiamos x por cada limite de integracion:</p>
+                    <td align="center"><span class="math">\[{5(2)} - \,{5(1)} = \, {5}\]</span></td>
+                </div>
+
+                <li>
+                    <p><span class="math">\(\int_1^2\, \frac{\sqrt{x^3}}{2}\, dx = \)</span>
+                        <button id="e1-7" class="button" onclick="show2('e1-7');">Solución</button>
+                    </p>
+                </li>
+                <div id="sol-e1-7" style="display:none;">
+                    <p>Primero descompondremos la raíz dividiendo el exponente de en este caso de “x” entre el valor
+                        de
+                        la raíz y así
+                        mismo separaremos al dos que se esta dividiendo de la siguiente manera:
+                    </p>
+                    <td align="center"><span class="math">\[\int\, \frac{\sqrt{x^3}}{2}\, = \, \frac{1}{2}\, \int\,
+                            {x^{\frac{3}{2}}}
+                            \]</span></td>
+                    <p>Ahora resolvemos la integral: </p>
+                    <td align="center"><span class="math">\[\int\, {x^{\frac{3}{2}}}\, = \,
+                            \frac{{x^{\frac{3}{2}+{\frac{2}{2}}}}}{{\frac{3}{2}+{\frac{2}{2}}}}\, = \,
+                            \frac{{x^{\frac{5}{2}}}}{{\frac{5}{2}}} \]</span></td>
+                    <p>Resolvemos todo junto y regresamos a “x” exponencial como raíz: </p>
+                    <td align="center"><span class="math">\[\frac{1}{2} * \, \frac{{x^{\frac{5}{2}}}}{{\frac{5}{2}}}
+                            =
+                            \,
+                            \frac{{x^{\frac{5}{2}}}}{5} = \, \frac{\sqrt{x^5}}{5} \]</span></td>
+                    <p>Y solo cambiamos x por cada limite de integracion: </p>
+                    <td align="center"><span class="math">\[\frac{\sqrt{2^5}}{5} - \, \frac{\sqrt{1^5}}{5} = \,
+                            \frac{4\sqrt{2}-1}{5}
+                            \]</span></td>
+                </div>
+            </ol>
+        </div>
     </main>
+    <script src="CalculoIntegral.js"></script>
 </body>
 
 </html>

