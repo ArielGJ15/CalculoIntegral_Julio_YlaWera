@@ -1,54 +1,14 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introducción al Cálculo Integral</title>
-    <!-- Agrega enlaces a los archivos CSS de Bootstrap -->
+    <title>Integrales Definidas</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         body {
-            background-image: url("fondo.jpg");
-        }
-
-        .btn {
-            background-color: #438e96;
-        }
-
-        .cuchau {
-            background-color: #356169;
-        }
-
-        .informacion {
-
-            border: 2px solid black;
-            padding: 10px;
-            text-align: center;
-        }
-
-        p {
-            border: 2px solid black;
-            padding: 10px;
-            text-align: center;
-        }
-
-        h1,
-        h2 {
-            text-align: center;
-        }
-
-        a {
-            text-decoration: none;
-            color: blueviolet;
-        }
-
-        a:hover {
-            font-size: 16.7px;
-        }
-
-        body {
-            background-color: whitesmoke;
+            background-color: #ffffff;
         }
 
         .header-logo {
@@ -57,105 +17,143 @@
             border-radius: 100%;
 
         }
+
+        header {
+            text-align: center;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10%;
+        }
+
+        .cuchau {
+            background-color: rgb(5, 6, 110);
+        }
+
+        .btnheader {
+            background-color: #44c767;
+            border-radius: 11px;
+            border: 3px solid #18ab29;
+            display: inline-block;
+            cursor: pointer;
+            color: #ffffff;
+            font-family: Arial;
+            font-size: 14px;
+            padding: 8px 8px;
+            text-decoration: none;
+        }
+
+        .btnheader:hover {
+            background-color: #5cbf2a;
+        }
+
+        .btnheader:active {
+            position: relative;
+            top: 1px;
+        }
+
+
+
+
+        p {
+            font-size: 15px;
+            text-align: justify;
+        }
+
+        .Boton {
+            box-shadow: inset 0px 1px 0px 0px #d9fbbe;
+            background: linear-gradient(to bottom, #b8e356 5%, #a5cc52 100%);
+            background-color: #b8e356;
+            border-radius: 6px;
+            border: 1px solid #83c41a;
+            display: inline-block;
+            cursor: pointer;
+            color: #ffffff;
+            font-family: Trebuchet MS;
+            font-size: 15px;
+            font-weight: bold;
+            font-style: italic;
+            padding: 14px 24px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #86ae47;
+        }
+
+        .Boton:hover {
+            background: linear-gradient(to bottom, #a5cc52 5%, #b8e356 100%);
+            background-color: #a5cc52;
+        }
+
+        .Boton:active {
+            position: relative;
+            top: 1px;
+        }
     </style>
 </head>
 
 <body>
-    <header class=" text-white text-center py-3 cuchau">
+    <header class=" text-white text-center py-3 cuchau" style="margin-bottom: 0%">
         <img src="logo.png" alt="Logo" class="header-logo">
 
         <h1>¿Qué es el Cálculo Integral?</h1>
 
-        <a href="/index/inicio_proy/inicio.html" class="btn btn-secondary">Regresar</a>
+        <a href="/index/inicio_proy/inicio.html" class="btnheader">Regresar</a>
     </header>
+    <main style="background-color: black;">
+        <div class="container">
+            <br><br><br>
+            <center>
+                <h2>Integrales Definidas. Ejercicios Resueltos paso a paso</h2>
+            </center>
+            <p class="preinformacion">
+                En esta lección, te voy a explicar <strong>qué es una integral definida y cómo se calcula</strong>. Para
+                ello, te
+                explicaré la regla de Barrow y veremos cómo aplicarla <br> paso a paso. Todo esto se ilustrará con
+                ejemplos y
+                ejercicios resueltos. <br><br>
 
-    <main
-        style="margin: 200px; background-color: #356169d7; border-radius: 100px; margin-top: 1px; color: azure; margin-bottom: 1px;">
-        <div class="container my-5">
-            <h2>Definición y Concepto Básico</h2>
-            <p class="informacion">
-                El cálculo integral es una rama de las matemáticas que se ocupa de conceptos como el área bajo una
-                curva, la acumulación de cantidades y la inversa de la derivación. En esencia, busca comprender y
-                cuantificar el cambio continuo. La herramienta principal en el cálculo integral es la integral, que
-                tiene dos formas principales: la integral indefinida, que encuentra la antiderivada de una función,
-                y
-                la integral definida, que calcula el área bajo una curva en un intervalo específico.<br>
+                Si has llegado hasta aquí, es probablemente porque hay algún ejercicio que no sabes resolver y necesitas
+                clases de matemáticas online. Después de leer esto, si deseas <br> que te ayude a resolverlo o que te
+                aclare
+                alguna duda, puedes optar por dos cosas: seguir buscando por Internet o contactar conmigo para ir
+                directo al grano y ahorrarte tiempo. <br><br>
+
+                Lo que estás a punto de leer <strong>es solo un ejemplo</strong> de lo que puedo enseñarte con mi método
+                para enseñar
+                matemáticas. Puedo guiarte paso a paso en la comprensión de cualquier duda que no entiendas. :)<br>
 
             </p>
-            <center><iframe width="560" height="315" src="https://www.youtube.com/embed/WA_A1IjmocQ" frameborder="0"
-                    allowfullscreen></iframe></center>
+            <center><button class="Boton">Ocupo Asesoria!</button></center>
         </div>
 
 
-        <div class="container my-5">
-            <h2> Integral Indefinida e Integral Definida</h2>
-            <p class="informacion">
+        <div class="container">
+            <p> La <strong>integral definida</strong> de una función f(x), se define de la siguiente forma: <br></p>
+            <center><img src="Resources/f(x).jpeg" alt="Definicion de F(x)"></center>
+            <p>
+                Donde a y b son <strong>valores de x</strong> llamados <strong>límites de integración:</strong> <br>
 
-                Integral Indefinida
-                <br>
-                La integral indefinida, denotada por ∫f(x)dx, representa una familia de funciones cuya derivada es
-                la<br>
-                función original f(x). Es esencialmente encontrar una función F(x) tal que F'(x) = f(x). Se añade
-                una<br>
-                constante arbitraria (llamada constante de integración) porque existen infinitas funciones con la
-                misma<br>
-                derivada.<br>
-                <br>
+                <li style="text-indent: 30px;">a: límite inferior de integración </li>
+                <li style="text-indent: 30px;">b: límite superior de integración </li><br>
+                La <strong>integral definida</strong> corresponde al área limitada por la curva f(x), los límites de
+                integración a y b y
+                el eje x:
+            </p>
+            <center><img src="Resources/Curva.png" alt="Curva"></center>
+            <p>
+                Por tanto, la solución de la integral definida es un valor numérico, que siempre debe ser positivo y
+                expresado en unidades cuadradas, ya que <br> realmente estamos calculando áreas. <br><br>
 
-                Integral Definida<br>
-                <br>
-                La integral definida, representada por ∫[a, b] f(x)dx, calcula la acumulación de la función f(x) en
-                el<br>
-                intervalo [a, b]. Geométricamente, esto corresponde al área entre la curva y el eje x en ese
-                intervalo.<br>
-                La integral definida proporciona resultados numéricos con significado físico, como el trabajo
-                realizado<br>
-                o la distancia recorrida.
+                Las integrales definidas de calculan aplicando la regla de Barrow, que será lo que veremos a
+                continuación.
             </p>
         </div>
 
-        <div class="container my-5">
-            <h2> Aplicaciones y Significado Práctico</h2>
-            <p class="informacion">
-                El cálculo integral tiene diversas aplicaciones en la física, la ingeniería y otras disciplinas.
-                Permite<br>
-                modelar y resolver problemas del mundo real, como calcular áreas, volúmenes, trabajar con tasas de<br>
-                cambio, y entender fenómenos de acumulación. Desde la velocidad y posición de un objeto en
-                movimiento<br>
-                hasta la determinación de probabilidades en estadísticas, el cálculo integral se convierte en una<br>
-                herramienta esencial para comprender y predecir el comportamiento de sistemas dinámicos y variables<br>
-                continuas. </p>
+
+        <div class="container">
+            <p></p>
         </div>
 
-        <div class="container my-5">
-            <h2>Recursos Adicionales</h2>
-            <p class="recursos">
-                Aquí te dejo algunos recursos en línea que podrían ayudarte a aprender cálculo integral:<br>
-
-                1. <a href=" https://es.khanacademy.org/math/integral-calculus" target="_blank">[Khan Academy]</a>:
-                Ofrece un
-                curso completo de cálculo integral que incluye integrales indefinidas, sumas de Riemann, integrales
-                definidas, problemas de aplicación y mucho más.<br>
-
-                2. <a href="https://edutin.com/curso-de-calculo-integral-3469" target="_blank">[Edutin Academy]</a>:
-                Proporciona un curso de cálculo integral gratuito y certificado. Aprenderás a resolver problemas de
-                integrales, series y derivadas.<br>
-
-                3. <a href="https://www.aprendematematicas.org.mx/course/calculo-integral/" target="_blank">[Aprende
-                    Matemáticas]</a>: Este es un curso de cálculo integral (nivel bachillerato) acorde con los
-                contenidos
-                del programa oficial de la Dirección General de Bachillerato (DGB) en México.<br>
-
-                4. <a href="https://www.udemy.com/course/aprende-calculo-integral-desde-cero/"
-                    target="_blank">[Udemy]</a>:
-                Ofrece un curso visual y práctico de cálculo integral desde cero.<br>
-
-                Espero que estos recursos te sean de ayuda. ¡Buena suerte con tu aprendizaje!<br>
-            </p>
-        </div>
     </main>
-
-
 </body>
 
 </html>
