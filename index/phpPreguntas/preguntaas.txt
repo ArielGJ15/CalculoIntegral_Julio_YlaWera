@@ -1,0 +1,73 @@
+¿Qué es una integral definida?
+
+Una integral definida es el cálculo del área bajo una curva entre dos puntos dados. Se representa con el símbolo ∫ab​f(x)dx, donde f(x) es la función, a y b son los límites de integración, y dx es el diferencial de x.
+
+
+¿Qué es una integral indefinida?
+
+Una integral indefinida es el proceso inverso de la derivación. Se representa con el símbolo ∫f(x)dx, donde f(x) es la función y dx es el diferencial de x. El resultado es una familia de funciones llamada antiderivada o primitiva, que se escribe como F(x)+C, donde F(x) es una función cuya derivada es f(x) y C es una constante arbitraria.
+
+
+¿Qué es el teorema fundamental del cálculo?
+
+El teorema fundamental del cálculo establece que si f es una función continua en el intervalo [a,b] y F es una antiderivada de f, entonces ∫ab​f(x)dx=F(b)−F(a). Esto significa que se puede calcular el área bajo una curva usando una antiderivada de la función y evaluándola en los límites de integración.
+
+
+¿Qué es una regla de integración?
+
+Una regla de integración es una fórmula o método que permite encontrar una antiderivada de una función. Algunas reglas de integración comunes son la integración por partes, la sustitución, la integración por fracciones parciales, la integración por cambio de variable, y la integración por trigonometría.
+
+
+¿Qué es la integración por partes?
+
+La integración por partes es una regla de integración que se basa en la derivada del producto de dos funciones. Se aplica cuando se tiene una integral de la forma ∫udv, donde u y v son funciones de x. La regla dice que ∫udv=uv−∫vdu, donde u y v son funciones de x y du y dv son sus diferenciales.
+
+
+¿Qué es la sustitución?
+
+La sustitución es una regla de integración que se basa en la derivada de la composición de dos funciones. Se aplica cuando se tiene una integral de la forma ∫f(g(x))g′(x)dx, donde f y g son funciones de x. La regla dice que se puede hacer el cambio de variable u=g(x), y entonces la integral se transforma en ∫f(u)du, donde du=g′(x)dx.
+
+
+¿Qué es la integración por fracciones parciales?
+
+La integración por fracciones parciales es una regla de integración que se aplica cuando se tiene una integral de una fracción racional, es decir, una fracción cuyo numerador y denominador son polinomios. La regla dice que se puede descomponer la fracción en una suma de fracciones más simples, cuyas integrales se pueden hallar fácilmente. El método para descomponer la fracción depende del grado y las raíces del denominador.
+
+
+¿Qué es la integración por cambio de variable?
+
+La integración por cambio de variable es una regla de integración que se aplica cuando se tiene una integral que se puede simplificar haciendo un cambio de variable adecuado. El cambio de variable puede ser lineal, cuadrático, trigonométrico, exponencial, logarítmico, o de otro tipo. El cambio de variable implica sustituir la variable original por una nueva, y también cambiar el diferencial y los límites de integración si es necesario.
+
+
+¿Qué es la integración por trigonometría?
+
+La integración por trigonometría es una regla de integración que se aplica cuando se tiene una integral que involucra funciones trigonométricas, como seno, coseno, tangente, cotangente, secante, y cosecante. La regla dice que se puede usar la identidad trigonométrica sin2x+cos2x=1 para reducir la integral a una forma más simple, o usar otras identidades o fórmulas trigonométricas para transformar la integral en una que se pueda resolver.
+
+
+¿Qué es una integral impropia?
+
+Una integral impropia es una integral que tiene al menos uno de los siguientes casos: el intervalo de integración es infinito, la función es discontinua en algún punto del intervalo, o la función tiende a infinito en algún punto del intervalo. Para resolver una integral impropia, se debe tomar el límite de una integral definida cuando uno o ambos límites de integración se acercan al punto problemático.
+
+
+¿Qué es una integral doble?
+
+Una integral doble es una integral que se aplica a una función de dos variables, f(x,y). Se representa con el símbolo ∬R​f(x,y)dA, donde R es una región del plano xy y dA es el elemento de área. El resultado es el volumen bajo la superficie z=f(x,y) y sobre la región R.
+
+
+¿Qué es una integral triple?
+
+Una integral triple es una integral que se aplica a una función de tres variables, f(x,y,z). Se representa con el símbolo ∭E​f(x,y,z)dV, donde E es una región del espacio xyz y dV es el elemento de volumen. El resultado es la masa de una sólido con densidad f(x,y,z) y dentro de la región E.
+
+
+¿Qué es una integral de línea?
+
+Una integral de línea es una integral que se aplica a una función escalar o vectorial a lo largo de una curva en el plano o en el espacio. Se representa con el símbolo ∫C​fds o ∫C​F⋅dr, donde C es la curva, f es la función escalar, F es la función vectorial, ds es el elemento de longitud, y dr es el elemento de desplazamiento. El resultado es el trabajo realizado por la fuerza F a lo largo de la curva C o el área bajo la curva f y sobre el eje x.
+
+
+¿Qué es una integral de superficie?
+
+Una integral de superficie es una integral que se aplica a una función escalar o vectorial sobre una superficie en el espacio. Se representa con el símbolo ∬S​fdS o ∬S​F⋅dS, donde S es la superficie, f es la función escalar, F es la función vectorial, dS es el elemento de área, y dS es el elemento de área con dirección normal. El resultado es el flujo de la fuerza F a través de la superficie S o el volumen bajo la superficie f y sobre el plano xy.
+
+
+¿Qué es una integral elíptica?
+
+Una integral elíptica es una integral que no se puede expresar en términos de funciones elementales, como polinomios, trigonométricas, exponenciales, o logarítmicas. Se llama así porque aparece al calcular la longitud de una elipse o el área de un sector elíptico. Se clasifican en tres tipos: integrales elípticas de primera, segunda, y tercera especie. Se representan con las letras K, E, y Π, respectivamente.
