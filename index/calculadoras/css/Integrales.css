@@ -1,77 +1,12 @@
-.calculator {
-    max-width: 530px;
-    background-color: beige;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 10px auto;
-}
-
-input[type=text] {
-    width: 315px;
-    height: 25px;
-    border-radius: 5px;
-    border: 0;
-    background-color: black;
-    color: #d9d9d9;
-    padding: 0 5px 0 5px;
-    margin: 0 0 10px 84px;
-}
-
-.calc-buttons {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.button {
-    margin: 3px;
-    width: 63px;
-    border: none;
-    height: 25px;
-    border-radius: 4px;
-    color: #000000;
-    cursor: pointer;
-}
-
-.button:hover {
-    background-color: hsla(180, 100%, 40%, 0.3);
-    transition: 0.2s;
-}
-
-.functions-one {
-    width: 210px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.functions-two {
-    width: 280px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-.triggers {
-    background-color: #ffc266;
-}
-
-.numbers {
-    background-color: #999999;
-}
-
-.basic-stuff {
-    background-color: #80d4ff;
-}
-
-.complex-stuff {
-    background-color: #80ffff;
+body {
+    background-color: #f7f8fa;
 }
 
 .header-logo {
     width: 100px;
     height: auto;
     border-radius: 100%;
+
 }
 
 header {
@@ -80,12 +15,14 @@ header {
     align-items: center;
     padding: 10%;
     color: white;
+    text-align: center;
     padding: 10px;
     width: 100%;
     top: 0;
     display: flex;
     position: fixed;
     z-index: 1000;
+
 }
 
 .cuchau {
@@ -112,6 +49,14 @@ header {
 .btnheader:active {
     position: relative;
     top: 1px;
+}
+
+
+
+
+p {
+    font-size: 15px;
+    text-align: justify;
 }
 
 .Boton {
@@ -142,6 +87,34 @@ header {
     top: 1px;
 }
 
+.button {
+    box-shadow: inset 0px 1px 0px 0px #d9fbbe;
+    background: linear-gradient(to bottom, #b8e356 5%, #a5cc52 100%);
+    background-color: #b8e356;
+    border-radius: 6px;
+    border: 1px solid #83c41a;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Trebuchet MS;
+    font-size: 15px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 14px 24px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #86ae47;
+}
+
+.button:hover {
+    background: linear-gradient(to bottom, #a5cc52 5%, #b8e356 100%);
+    background-color: #a5cc52;
+}
+
+.button:active {
+    position: relative;
+    top: 1px;
+}
+
 ol {
     list-style-type: none;
     padding: 0;
@@ -153,7 +126,10 @@ ol {
 
 li {
     text-align: left;
+    /* Opcional: Alinea el texto a la izquierda dentro de cada <li> */
 }
+
+/*Intento de sidebar*/
 
 #side_nav {
     background: #000;
@@ -161,12 +137,17 @@ li {
     max-width: 300px;
     transition: all 0.3s;
     position: fixed;
+    /* Hacer el sidebar fijo */
     height: 100%;
+    /* Establecer la altura al 100% para que cubra toda la pantalla */
     overflow-y: auto;
+    /* Agregar desplazamiento vertical si es necesario */
 }
+
 
 .content {
     margin-left: 320px;
+    /* Ajustar el margen izquierdo del contenido principal para dar espacio al sidebar */
     min-height: 100vh;
     width: 100%;
 }
@@ -195,6 +176,7 @@ hr.h-color {
         position: absolute;
         min-height: 100vh;
         z-index: 1;
+
     }
 
     #side_nav.active {
@@ -202,17 +184,27 @@ hr.h-color {
     }
 }
 
+/* Intento de slider*/
+
 label {
     cursor: pointer;
 }
 
+/* Contenedor para centrar */
 .ContainerCenter {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
+/* Input */
+input {
+    display: none
+}
 
+
+
+/* Slider */
 .Carrusels {
     border-radius: 5%;
     height: 200px;
@@ -227,9 +219,10 @@ label {
     position: absolute;
     background-size: cover;
     overflow-y: hidden;
-    transition: all 0.5s ease;
+    transition: all .5s ease;
 }
 
+/* Estado 1 */
 #Slider1:checked~.Carrusels .Carrusel:nth-of-type(1) {
     transform: translate(0%, 0);
 }
@@ -242,6 +235,7 @@ label {
     transform: translate(200%, 0);
 }
 
+/* Estado 2 */
 #Slider2:checked~.Carrusels .Carrusel:nth-of-type(1) {
     transform: translate(-100%, 0);
 }
@@ -254,6 +248,7 @@ label {
     transform: translate(100%, 0);
 }
 
+/* Estado 3 */
 #Slider3:checked~.Carrusels .Carrusel:nth-of-type(1) {
     transform: translate(-200%, 0);
 }
@@ -266,6 +261,8 @@ label {
     transform: translate(0%, 0);
 }
 
+
+/* Flechas */
 .Carrusels .ArrowLeft,
 .Carrusels .ArrowRight {
     position: absolute;
@@ -285,6 +282,7 @@ label {
     right: 0px;
 }
 
+/* Configuracion de flechas individuales */
 #Slider1:checked~.Carrusels .Arrow1 {
     display: flex;
 }
@@ -297,6 +295,8 @@ label {
     display: flex;
 }
 
+
+/* Selectores */
 .Selectors {
     width: 60px;
     padding: 15px;
@@ -312,6 +312,7 @@ label {
     border-radius: 5px;
 }
 
+/* Condicionales para botón inferior */
 #Slider1:checked~.Selectors .Selector:nth-of-type(1) {
     background-color: #999999;
 }
