@@ -39,7 +39,7 @@ body {
 #left {
     position: relative;
     background: var(--gradient),
-        url("https://images.pexels.com/photos/556663/pexels-photo-556663.jpeg?auto=compress&cs=tinysrgb&h=650&w=940");
+        url("Resources/Cerebro.jpg");
     background-size: cover;
     background-position: center;
     height: calc(100% + 50px);
