@@ -1,0 +1,16 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+.quantserve.com	TRUE	/	FALSE	1999999999	mc	6562c65b-7bea0-19457-bd82e
+calculadoradeintegrales.org	TRUE	/	FALSE	1999999999	XSRF-TOKEN	eyJpdiI6IlB3MTJRZEdlMlNBNDdkT0pmRVIwQ2c9PSIsInZhbHVlIjoiYmVRZ01IV2FKbzhDUmxUNzRtaHFNNHIwTDlQZWRIS2p5ajVIZ0NXZmZMb2RjUmJCS3VtNmM5dmVjdUI3OU95b0RQbTFHOXRMQ3lYMU1uWXhnNnlDSW5TRXV3NUJ1SU15QzNaUXBGUUFzTzAzV2VQdkN3czZ6UnZ5OWVKMitHSnciLCJtYWMiOiIzNTlmNDVjMTY5MmRmODk4NGVmN2U4MmUwZjQzNmQyYTgyYjgxYjA0ZWQ4MzNhMGVhYzlhYTBiMDUwYTI0ODA4IiwidGFnIjoiIn0%3D
+calculadoradeintegrales.org	TRUE	/	FALSE	1999999999	calculadora_de_integrales_session	eyJpdiI6Im9QUGhFNmwwb0NULzFGbE10U01ieVE9PSIsInZhbHVlIjoiRkwwZ0NnTXRxUFpjdHIxMnU1WGo0UE5QRDNLaUdNb01oUk5weW95a1VqRmlCRUt6L3A5TUNQUGJiZWFUNGg4WTQxVHhvc0t0NFkwWks0UzRTRk1za0hRSm80SENiR05GRGtheXVuRHhQVndxcnp3cFNLd0VTZDNKb2w5bTdIVk4iLCJtYWMiOiI0ODUzYjg3MGNhOWE4NDIwOTk1YmRkZDIxNzljYjU2ZjNlMzM2YzNmZDA2ZWZlYmFiNzc0NGEyZWE2MWVmODY2IiwidGFnIjoiIn0%3D
+calculadoradeintegrales.org	TRUE	/	FALSE	1999999999	ezoab_525962	mod71-c
+calculadoradeintegrales.org	TRUE	/	FALSE	1999999999	ezoadgid_525962	-1
+calculadoradeintegrales.org	TRUE	/	FALSE	1999999999	ezoref_525962	calculadoradeintegrales.org
+calculadoradeintegrales.org	TRUE	/	FALSE	1999999999	ezosuibasgeneris-1	d6ed14d1-af85-4fc0-51e3-702d0d349e8d
+calculadoradeintegrales.org	TRUE	/	FALSE	1999999999	SameSite	None
+calculadoradeintegrales.org	TRUE	/	FALSE	1999999999	active_template::525962	pub_site.1700972340
+calculadoradeintegrales.org	TRUE	/	FALSE	1999999999	ezopvc_525962	1
+calculadoradeintegrales.org	TRUE	/	FALSE	1999999999	lp_525962	https://calculadoradeintegrales.org/formula/formulas-de-integrales
+calculadoradeintegrales.org	TRUE	/	FALSE	1999999999	ezovuuidtime_525962	1700972341
+calculadoradeintegrales.org	TRUE	/	FALSE	1999999999	ezovuuid_525962	19e3b620-c59a-4d26-6a25-33607517fcb7
+
