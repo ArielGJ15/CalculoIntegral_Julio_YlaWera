@@ -9,19 +9,32 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
     <link rel="stylesheet" href="Integrales.css">
     <link rel="icon" href="Resources/logo.png">
-    <style>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 
-    </style>
+    <link rel="stylesheet" href="">
+    <script>
+        function abrirVentanaEmergente() {
+            // Abre una nueva ventana emergente con el contenido de la página especificada
+            window.open('/index/calculadoras/index.html', 'PantallaEmergente', 'width=600,height=600,toolbar=0,menubar=0,location=0,status=0,resizable=0');
+        }
+        function abrirVentanaEmergente2() {
+            // Abre una nueva ventana emergente con el contenido de la página especificada
+            window.open('https://es.symbolab.com/solver/definite-integral-calculator', 'PantallaEmergente', 'width=900,height=600,toolbar=0,menubar=0,location=0,status=0,resizable=0');
+        }
+    </script>
+
 </head>
 
 <body>
 
+    <!-- Fondo oscuro detrás de la ventana emergente -->
+    <div id="overlay" class="overlay"></div>
     <header class=" text-white text-center py-1 cuchau" style="margin-bottom: 0%">
-        <img src="Resources/logo.png" alt="Logo" class="header-logo">
+        <a href="/index/inicio_proy/inicio.html"><img src="Resources/logo.png" alt="Logo" class="header-logo"></a>
 
         <h2>¡Integrales!</h2>
 
-        <a href="/index/inicio_proy/inicio.html" class="btnheader">Regresar</a>
+        <a href="/index/BotonHtml/Integrales Definidas/Definidas.html" class="btnheader">INTEGRALES DEFINIDAS!!</a>
     </header>
     <div class="main-container d-flex">
         <div class="sidebar" id="side_nav">
@@ -31,7 +44,9 @@
                 </h1>
                 <button class="btn d-md-none d-block close-btn px-1 py-0 text-white"><i
                         class="fal fa-stream"></i></button>
+
             </div>
+
             <center>
                 <div class="ContainerCenter">
                     <!-- Radio Seleccionar para el primer carrusel -->
@@ -69,40 +84,26 @@
                 </div>
                 <!-- Nuevo conjunto para el segundo carrusel -->
                 <div class="ContainerCenter">
-                    <!-- Radio Seleccionar para el segundo carrusel -->
-                    <input type="radio" name="Carrusel2" id="Slider4">
-                    <input type="radio" name="Carrusel2" id="Slider5">
-                    <input type="radio" name="Carrusel2" id="Slider6">
-
-                    <!-- Segundo Carrusel -->
+                    <input type="radio" name="Carrusel2" id="Slider4" checked>
                     <div class="Carrusels">
-                        <!-- Ejemplo de imágenes y enlaces (ajusta según tus necesidades) -->
-                        <a href="#">
-                            <div class="Carrusel" style="background-image: url('Resources/sello.png');"></div>
-                        </a>
-                        <a href="#">
-                            <div class="Carrusel" style="background-image: url('Resources/Cientifica.png');"></div>
-                        </a>
-                        <a href="#">
-                            <div class="Carrusel" style="background-image: url('path/to/image6.jpg');"></div>
-                        </a>
-
-                        <!-- Flechas y selectores para el segundo carrusel (ajusta según tus necesidades) -->
-                        <label for="Slider6" class="ArrowLeft Arrow4">❮</label>
-                        <label for="Slider4" class="ArrowLeft Arrow5">❮</label>
-                        <label for="Slider5" class="ArrowLeft Arrow6">❮</label>
-
-                        <label for="Slider5" class="ArrowRight Arrow4">❯</label>
-                        <label for="Slider6" class="ArrowRight Arrow5">❯</label>
-                        <label for="Slider4" class="ArrowRight Arrow6">❯</label>
+                        <div class="Carrusel" style="background-image: url(Resources/Cientifica.png);"
+                            onclick="abrirVentanaEmergente()"> </div>
                     </div>
 
                     <!-- Selector circulos inferiores colgantes del segundo carrusel -->
-                    <div class="Selectors">
-                        <label for="Slider4" class="Selector"></label>
-                        <label for="Slider5" class="Selector"></label>
-                        <label for="Slider6" class="Selector"></label>
+
+                </div>
+                <br>
+                <!--Tercer Imagen-->
+                <div class="ContainerCenter">
+                    <input type="radio" name="Carrusel2" id="Slider4" checked>
+                    <div class="Carrusels">
+                        <div class="Carrusel" style="background-image: url(Resources/Integrales.png);"
+                            onclick="abrirVentanaEmergente2()"> </div>
                     </div>
+
+                    <!-- Selector circulos inferiores colgantes del segundo carrusel -->
+
                 </div>
             </center>
         </div>
@@ -198,7 +199,20 @@
             </div>
         </main>
 
+        <<<<<<< HEAD </div>
+            =======
+            Esto conecta las integrales con las funciones antiderivadas y nos proporciona una poderosa
+            herramienta
+            para calcular áreas y acumulaciones.<br> <br>
+
+            </p>
+            <center><a href="/index/Servicio/servicio.html"><button class="Boton">Necesito Asesoría</button></a>
+            </center>
     </div>
+    </main>
+
+    </div>
+    >>>>>>> 46fdee558dc14fad0d2bb198d9f461a70e63abbc
     </div>
 
     <script src="SIDE.js"></script>

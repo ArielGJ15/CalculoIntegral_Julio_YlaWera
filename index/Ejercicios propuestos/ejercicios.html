@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
+    <link rel="stylesheet" href="ejercicios.css">
     <script>
         MathJax.Hub.Config({
             tex2jax:
@@ -17,95 +18,119 @@
 </head>
 
 <body>
+    <br><br><br>
 
-    <h1>Ejercicios de integrales definidas</h1>
-    <ol>
-        <h3>-Resuelve las siguientes integrales:</h3>
-        <li>
-            <p><span class="math">\(\int_{-2}^2 {x^2} + 5 \, dx = \)</span>
-                <input type="text" id="R1" name="R1"> 
-            </p>
-            <button id="e1-1" class="button" onclick="show2('e1-1');">Solución</button>
-        </li>
-        <p id="Chi"></p>
-        <div id="sol-e1-1" style="display:none;">
-            <p>Para resolverlo sumaremos más uno al exponente y el resultado lo usamos para dividir; para el 5 solo le
-                multiplicamos por “x”. de la siguiente manera:</p>
-            <td align="center"><span class="math">\[\frac{x^{2+1}}{2+1} + 5x\, = \frac{x^3}{3} + 5x\]</span></td>
-            <p>Y solo cambiamos x por cada limite de integracion:</p>
-            <td align="center"><span class="math">\[\frac{2^3}{3} + 5(2)\, - \frac{(-2)^3}{3} + 5(-2)\, = \frac{76}{3} =
-                    25.33 U^2\]</span></td>
-        </div>
+    <header class=" text-white text-center py-1 cuchau" style="margin-bottom: 0%">
+        <a href="/index/inicio_proy/inicio.html"><img src="Resources/logo.png" alt="Logo" class="header-logo"></a>
 
-        <li>
-            <p><span class="math">\(\int_{-1}^1 \frac{5}{x+2} + 3e^x \, dx = \)</span>
-                <input type="text" id="R2" name="R2"> 
-            </p>
-            <button id="e1-2" class="button" onclick="show3('e1-2');">Solución</button>
-        </li>
-        <p id="Chi2"></p>
-        <div id="sol-e1-2" style="display:none;">
-            <p>Cuando tenemos un numero natural siendo dividido por una función sin exponentes entonces ya sabemos que
-                su integral es ln y lo mismo para <span class="math">\(e^x:\)</span>
-            </p>
-            <td align="center"><span class="math">\[5ln \lvert x+2\rvert + 3e^x\, = \]</span></td>
-            <p>Y solo cambiamos x por cada limite de integracion:</p>
-            <td align="center"><span class="math">\[[5ln \lvert 1+2\rvert + 3e^1] - [5ln \lvert -1+2\rvert + 3e^{-1}]\,
-                    = ln \lvert 243\rvert = 5.49 U^2\]</span></td>
-        </div>
+        <h2>¿Que son las integrales definidas?</h2>
 
-        <li>
-            <p><span class="math">\(\int_1^4 3x^2 -5x +8\,dx = \)</span>
-                <input type="text" id="R3" name="R3"> 
-            </p>
-            <button id="e1-3" class="button" onclick="show4('e1-3');">Solución</button>
-        </li>
-        <p id="Chi3"></p>
-        <div id="sol-e1-3" style="display:none;">
-            <p>Para resolverlo les sumaremos más uno al exponente y el resultado lo usamos para dividir; para el 8 solo
-                agregamos “x”:
-            </p>
-            <td align="center"><span class="math">\[\frac{3x^{2+1}}{2+1} - \frac{5x^{1+1}}{1+1} + 8x\, = x^3 -
-                    \frac{5x^{2}}{2} + 8x\]</span></td>
-            <p>Y solo cambiamos x por cada limite de integracion:</p>
-            <td align="center"><span class="math">\[[4^3 - \frac{5(4)^{2}}{2} + 8(4)]-[1^3 - \frac{5(1)^{2}}{2} + 8(1)]\, = \frac{99}{2} = 49.5 U^2\]</span></td>
-        </div>
+        <a href="/index/inicio_proy/inicio.html" class="btnheader">Regresar</a>
+    </header>
+    <center>
+        <h1>Ejercicios de integrales definidas</h1>
+        <ol>
+            <h3>-Resuelve las siguientes integrales:</h3>
+            <li>
+                <p><span class="math">\(\int_{-2}^2 {x^2} + 5 \, dx = \)</span>
+                    <input type="text" id="R1" name="R1">
+                </p>
+                <button id="e1-1" class="button" onclick="show2('e1-1');">Solución</button>
+            </li>
+            <p id="Chi"></p>
+            <div id="sol-e1-1" style="display:none;">
+                <p>Para resolverlo sumaremos más uno al exponente y el resultado lo usamos para dividir; para el 5 solo
+                    le
+                    multiplicamos por “x”. de la siguiente manera:</p>
+                <td align="center"><span class="math">\[\frac{x^{2+1}}{2+1} + 5x\, = \frac{x^3}{3} + 5x\]</span></td>
+                <p>Y solo cambiamos x por cada limite de integracion:</p>
+                <td align="center"><span class="math">\[\frac{2^3}{3} + 5(2)\, - \frac{(-2)^3}{3} + 5(-2)\, =
+                        \frac{76}{3} =
+                        25.33 U^2\]</span></td>
+            </div>
 
-        <li>
-            <p><span class="math">\(\int_3^3 \frac{5}{3} {x^4} + \cos(x)\, dx = \)</span>
-                <input type="text" id="R4" name="R4"> 
-            </p>
-            <button id="e1-4" class="button" onclick="show5('e1-4');">Solución</button>
-        </li>
-        <p id="Chi4"></p>
-        <div id="sol-e1-4" style="display:none;">
-            <p>La integral de "<span class="math">\(\cos(x)\)</span>" es: "<span class="math">\(\operatorname{sen}(x)\)</span>"
-                entonces solo resolvemos como:
-            </p>
-            <td align="center"><span class="math">\[\frac{5}{3} * \frac{x^{4+1}}{4+1} + \operatorname{sen}(x)\, = \, \frac{5}{3} * \frac{x^5}{5} + \operatorname{sen}(x) \]</span></td>
-            <p>Y solo cambiamos x por cada limite de integracion:</p>
-            <td align="center"><span class="math">\[[\frac{5}{3} * \frac{3^5}{5} + \operatorname{sen}(3)] -  [\frac{5}{3} * \frac{3^5}{5} + \operatorname{sen}(3) \,] = 0\]</span></td>
-        </div>
+            <li>
+                <p><span class="math">\(\int_{-1}^1 \frac{5}{x+2} + 3e^x \, dx = \)</span>
+                    <input type="text" id="R2" name="R2">
+                </p>
+                <button id="e1-2" class="button" onclick="show3('e1-2');">Solución</button>
+            </li>
+            <p id="Chi2"></p>
+            <div id="sol-e1-2" style="display:none;">
+                <p>Cuando tenemos un numero natural siendo dividido por una función sin exponentes entonces ya sabemos
+                    que
+                    su integral es ln y lo mismo para <span class="math">\(e^x:\)</span>
+                </p>
+                <td align="center"><span class="math">\[5ln \lvert x+2\rvert + 3e^x\, = \]</span></td>
+                <p>Y solo cambiamos x por cada limite de integracion:</p>
+                <td align="center"><span class="math">\[[5ln \lvert 1+2\rvert + 3e^1] - [5ln \lvert -1+2\rvert +
+                        3e^{-1}]\,
+                        = ln \lvert 243\rvert = 5.49 U^2\]</span></td>
+            </div>
 
-        <li>
-            <p><span class="math">\(\int_{-3}^1 \frac{3}{4x+5} + 5 \, dx = \)</span>
-                <input type="text" id="R5" name="R5"> 
-            </p>
-            <button id="e1-5" class="button" onclick="show6('e1-5');">Solución</button>
-        </li>
-        <p id="Chi5"></p>
-        <div id="sol-e1-5" style="display:none;">
-            <p>Para resolverlo separamos los reales y resolvemos por inmediata, de la siguiente
-                manera:
-            </p>
-            <td align="center"><span class="math">\[\frac{3}{4} ln \lvert {x+5}\rvert +5x \, = \]</span></td>
-            <p>Y solo cambiamos x por cada limite de integracion:</p>
-            <td align="center"><span class="math">\[[\frac{3}{4} ln \lvert {1+5}\rvert + 5(1)] \, - \,[\frac{3}{4} ln \lvert {-3+5}\rvert + 5(-3)] \, = \, ln \lvert {3^{\frac{3}{4}}}\rvert + 20 = 20.82 U^2\]</span></td>
-        </div>
+            <li>
+                <p><span class="math">\(\int_1^4 3x^2 -5x +8\,dx = \)</span>
+                    <input type="text" id="R3" name="R3">
+                </p>
+                <button id="e1-3" class="button" onclick="show4('e1-3');">Solución</button>
+            </li>
+            <p id="Chi3"></p>
+            <div id="sol-e1-3" style="display:none;">
+                <p>Para resolverlo les sumaremos más uno al exponente y el resultado lo usamos para dividir; para el 8
+                    solo
+                    agregamos “x”:
+                </p>
+                <td align="center"><span class="math">\[\frac{3x^{2+1}}{2+1} - \frac{5x^{1+1}}{1+1} + 8x\, = x^3 -
+                        \frac{5x^{2}}{2} + 8x\]</span></td>
+                <p>Y solo cambiamos x por cada limite de integracion:</p>
+                <td align="center"><span class="math">\[[4^3 - \frac{5(4)^{2}}{2} + 8(4)]-[1^3 - \frac{5(1)^{2}}{2} +
+                        8(1)]\, = \frac{99}{2} = 49.5 U^2\]</span></td>
+            </div>
 
-        <br>
-        
-    </ol>
+            <li>
+                <p><span class="math">\(\int_3^3 \frac{5}{3} {x^4} + \cos(x)\, dx = \)</span>
+                    <input type="text" id="R4" name="R4">
+                </p>
+                <button id="e1-4" class="button" onclick="show5('e1-4');">Solución</button>
+            </li>
+            <p id="Chi4"></p>
+            <div id="sol-e1-4" style="display:none;">
+                <p>La integral de "<span class="math">\(\cos(x)\)</span>" es: "<span
+                        class="math">\(\operatorname{sen}(x)\)</span>"
+                    entonces solo resolvemos como:
+                </p>
+                <td align="center"><span class="math">\[\frac{5}{3} * \frac{x^{4+1}}{4+1} + \operatorname{sen}(x)\, = \,
+                        \frac{5}{3} * \frac{x^5}{5} + \operatorname{sen}(x) \]</span></td>
+                <p>Y solo cambiamos x por cada limite de integracion:</p>
+                <td align="center"><span class="math">\[[\frac{5}{3} * \frac{3^5}{5} + \operatorname{sen}(3)] -
+                        [\frac{5}{3}
+                        * \frac{3^5}{5} + \operatorname{sen}(3) \,] = 0\]</span></td>
+            </div>
+
+            <li>
+                <p><span class="math">\(\int_{-3}^1 \frac{3}{4x+5} + 5 \, dx = \)</span>
+                    <input type="text" id="R5" name="R5">
+                </p>
+                <button id="e1-5" class="button" onclick="show6('e1-5');">Solución</button>
+            </li>
+            <p id="Chi5"></p>
+            <div id="sol-e1-5" style="display:none;">
+                <p>Para resolverlo separamos los reales y resolvemos por inmediata, de la siguiente
+                    manera:
+                </p>
+                <td align="center"><span class="math">\[\frac{3}{4} ln \lvert {x+5}\rvert +5x \, = \]</span></td>
+                <p>Y solo cambiamos x por cada limite de integracion:</p>
+                <td align="center"><span class="math">\[[\frac{3}{4} ln \lvert {1+5}\rvert + 5(1)] \, - \,[\frac{3}{4}
+                        ln
+                        \lvert {-3+5}\rvert + 5(-3)] \, = \, ln \lvert {3^{\frac{3}{4}}}\rvert + 20 = 20.82 U^2\]</span>
+                </td>
+            </div>
+
+            <br>
+
+        </ol>
+    </center>
+
 
     <script src="script.js"></script>
 </body>

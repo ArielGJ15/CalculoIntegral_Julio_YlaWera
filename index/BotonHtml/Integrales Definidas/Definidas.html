@@ -9,11 +9,109 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
     <link rel="stylesheet" href="Definidas.css">
     <link rel="icon" href="Resources/logo.png">
+    <link href="/index/inicio_proy/bootstrap.css" rel="stylesheet">
+
+    <script>
+        function abrirVentanaEmergente() {
+            // Abre una nueva ventana emergente con el contenido de la página especificada
+            window.open('/index/calculadoras/index.html', 'PantallaEmergente', 'width=600,height=600,toolbar=0,menubar=0,location=0,status=0,resizable=0');
+        }
+        function abrirVentanaEmergente2() {
+            // Abre una nueva ventana emergente con el contenido de la página especificada
+            window.open('https://es.symbolab.com/solver/definite-integral-calculator', 'PantallaEmergente', 'width=900,height=600,toolbar=0,menubar=0,location=0,status=0,resizable=0');
+        }
+    </script>
+    <style>
+        .popup {
+            box-shadow: 3px 4px 0px 0px #8a2a21;
+            background: linear-gradient(to bottom, #c62d1f 5%, #f24437 100%);
+            background-color: #c62d1f;
+            border-radius: 18px;
+            border: 1px solid #d02718;
+            display: inline-block;
+            cursor: pointer;
+            color: #ffffff;
+            font-family: Arial;
+            font-size: 17px;
+            padding: 7px 25px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #810e05;
+        }
+
+        .popup:hover {
+            background: linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+            background-color: #f24437;
+        }
+
+        .popup:active {
+            position: relative;
+            top: 1px;
+        }
+
+
+        .PRESIONAME {
+            box-shadow: inset 0px 0px 15px 3px #23395e;
+            background: linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+            background-color: #2e466e;
+            border-radius: 17px;
+            border: 1px solid #1f2f47;
+            display: inline-block;
+            cursor: pointer;
+            color: #ffffff;
+            font-family: Arial;
+            font-size: 28px;
+            padding: 14px 16px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #263666;
+        }
+
+        .PRESIONAME:hover {
+            background: linear-gradient(to bottom, #415989 5%, #2e466e 100%);
+            background-color: #415989;
+        }
+
+        .PRESIONAME:active {
+            position: relative;
+            top: 1px;
+        }
+
+
+
+        /*POP UP*/
+        .popup-container {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1;
+        }
+
+        /* Estilos para el fondo oscurecido */
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 0;
+        }
+
+        footer {
+            background-color: #ebf8ff;
+        }
+    </style>
 </head>
 
 <body>
     <header class=" text-white text-center py-1 cuchau" style="margin-bottom: 0%">
-        <img src="Resources/logo.png" alt="Logo" class="header-logo">
+        <a href="/index/inicio_proy/inicio.html"><img src="Resources/logo.png" alt="Logo" class="header-logo"></a>
 
         <h2>¿Que son las integrales definidas?</h2>
 
@@ -30,39 +128,66 @@
                         class="fal fa-stream"></i></button>
             </div>
             <center>
+                <br>
                 <div class="ContainerCenter">
-                    <!-- Radio Seleccionar -->
-                    <input type="radio" name="Carrusel" id="Slider1" checked>
-                    <input type="radio" name="Carrusel" id="Slider2">
-                    <input type="radio" name="Carrusel" id="Slider3">
+                    <!-- Radio Seleccionar para el primer carrusel -->
+                    <input type="radio" name="Carrusel1" id="Slider1" checked>
+                    <input type="radio" name="Carrusel1" id="Slider2">
+                    <input type="radio" name="Carrusel1" id="Slider3">
 
+                    <!-- Primer Carrusel -->
                     <div class="Carrusels">
-                        <!-- Imagen contenido -->
-                        <div class="Carrusel" style="background-image: url(Resources/Sello.png);">
-                        </div>
-                        <div class="Carrusel" style="background-image: url(Resources/planeta.png);"></div>
-                        <div class="Carrusel" style="background-image: url(Resources/foco.png);"></div>
+                        <!-- Imagen contenido del primer carrusel -->
+                        <a href="https://www.un.org/es/chronicle/article/objetivo-7-garantizar-el-acceso-una-energia-asequible-fiable-sostenible-y-moderna-para-todos"
+                            target="_blank">
+                            <div class="Carrusel" style="background-image: url(Resources/sello.png);"></div>
+                            <div class="Carrusel" style="background-image: url(Resources/planeta.png);"></div>
+                            <div class="Carrusel" style="background-image: url(Resources/foco.png);"></div>
+                        </a>
 
-                        <!-- Flechas a la izquierda por cada imagen -->
+                        <!-- Flechas a la izquierda por cada imagen del primer carrusel -->
                         <label for="Slider3" class="ArrowLeft Arrow1">❮</label>
                         <label for="Slider1" class="ArrowLeft Arrow2">❮</label>
                         <label for="Slider2" class="ArrowLeft Arrow3">❮</label>
 
-                        <!-- Flechas a la derecha por cada imagen -->
+                        <!-- Flechas a la derecha por cada imagen del primer carrusel -->
                         <label for="Slider2" class="ArrowRight Arrow1">❯</label>
                         <label for="Slider3" class="ArrowRight Arrow2">❯</label>
                         <label for="Slider1" class="ArrowRight Arrow3">❯</label>
                     </div>
 
-                    <!-- Selector circulos inferiores colgantes -->
+                    <!-- Selector circulos inferiores colgantes del primer carrusel -->
                     <div class="Selectors">
                         <label for="Slider1" class="Selector"></label>
                         <label for="Slider2" class="Selector"></label>
                         <label for="Slider3" class="Selector"></label>
                     </div>
                 </div>
-            </center>
 
+                <!-- Añadir un segundo carrusel -->
+                <div class="ContainerCenter">
+                    <input type="radio" name="Carrusel2" id="Slider4" checked>
+                    <div class="Carrusels">
+                        <div class="Carrusel" style="background-image: url(Resources/Cientifica.png);"
+                            onclick="abrirVentanaEmergente()"> </div>
+                    </div>
+
+                    <!-- Selector circulos inferiores colgantes del segundo carrusel -->
+
+                </div>
+                <br>
+                <!--Tercer Imagen-->
+                <div class="ContainerCenter">
+                    <input type="radio" name="Carrusel2" id="Slider4" checked>
+                    <div class="Carrusels">
+                        <div class="Carrusel" style="background-image: url(Resources/Integrales.png);"
+                            onclick="abrirVentanaEmergente2()"> </div>
+                    </div>
+
+                    <!-- Selector circulos inferiores colgantes del segundo carrusel -->
+
+                </div>
+            </center>
         </div>
         <div class="content">
             <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
@@ -116,7 +241,8 @@
                         :)<br>
 
                     </p>
-                    <center><button class="Boton">Ocupo Asesoria!</button></center>
+                    <center><a href="/index/Servicio/servicio.html"><button class="Boton">Ocupo Asesoria!</button></a>
+                    </center>
                 </div>
 
 
@@ -159,7 +285,8 @@
 
                         Es necesario que sepas resolver integrales indefinidas, para poder resolver las integrales
                         definidas. Si
-                        no es tu caso, te recomendamos <a href="http://">contactar con uno de nuestros asesores!</a></p>
+                        no es tu caso, te recomendamos <a href="/index/Servicio/servicio.html">contactar con uno de
+                            nuestros asesores!</a></p>
                     <h4>Regla de Barrow</h4><br>
                     <p>La regla de Barrow dice lo siguiente: <br><br>
 
@@ -351,11 +478,63 @@
                                     \]</span></td>
                         </div>
                     </ol>
+                    <!-- Botón para abrir el popup -->
+                    <center><button class="PRESIONAME" onclick="openPopup()">Quieres Intentar un nuevo reto?</button>
+                    </center>
+
+                    <!-- Contenedor del popup y fondo oscurecido -->
+                    <div class="overlay" id="overlay"></div>
+                    <div class="popup-container" id="popup">
+                        <h2>¡Hola! ¿Estás listo para un desafío emocionante?</h2>
+                        <p>Te invitamos a poner a prueba tus habilidades resolviendo los 15 ejercicios propuestos. Cada
+                            problema es una oportunidad para aprender y mejorar. ¡No te preocupes si encuentras algún
+                            desafío, la clave está en intentarlo! Así que, ¿por qué no sumergirte en estos ejercicios y
+                            ver hasta dónde te lleva tu ingenio? ¡Adelante, comienza la aventura de resolución de
+                            problemas! 🧠💡 ¡Buena suerte!</p>
+                        <center><button class="popup" onclick="closePopup()">INTENTALO</button></center>
+                    </div>
+
+                    <script>
+                        // Función para abrir el popup
+                        function openPopup() {
+                            document.getElementById('overlay').style.display = 'block';
+                            document.getElementById('popup').style.display = 'block';
+                        }
+
+                        // Función para cerrar el popup
+                        function closePopup() {
+                            document.getElementById('overlay').style.display = 'none';
+                            document.getElementById('popup').style.display = 'none';
+                            // Redirigir a otra página (puedes cambiar la URL)
+                            window.location.href = '/index/Ejercicios propuestos/ejercicios.html';
+                        }
+
+                    </script>
+
                 </div>
             </main>
 
         </div>
     </div>
+
+
+
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3"><a class="text-body-secondary" href="https://twitter.com/Kori_Gon" target="_blank"><svg
+                    class="bi" width="24" height="24">
+                    <use xlink:href="#twitter" />
+                </svg></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/g.arju15/" target="_blank"><svg
+                    class="bi" width="24" height="24">
+                    <use xlink:href="#instagram" />
+                </svg></a></li>
+        <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/profile.php?id=100035024508176"
+                target="_blank"><svg class="bi" width="24" height="24">
+                    <use xlink:href="#facebook" />
+                </svg></a></li>
+    </ul>
+    </footer>
     <script src="Definidas.js"></script>
 </body>
 
