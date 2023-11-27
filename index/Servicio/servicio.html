@@ -11,6 +11,12 @@
             display: none;
         }
     </style>
+    <script>
+        function redirectToOtraPagina() {
+            // Cambia la URL a la que deseas redirigir
+            window.location.href = 'Enlace/enlace.html';
+        }
+    </script>
 </head>
 
 <body>
@@ -25,8 +31,7 @@
         </section>
         <section id="right">
             <h1>Compra ya!</h1>
-            <form action="https://formspree.io/f/mzbllboz" action="https://mail.google.com/mail/u/0/#inbox"
-                method="post" onsubmit="return redirectToAnotherPage();">
+            <form onsubmit="redirectToOtraPagina(); return false;">
                 <div id="form-card" class="form-field">
                     <label for="cc-number">Numero de Tarjeta:</label>
                     <input type="text" id="cc-number" name="cc-number" maxlength="19" placeholder="1111 2222 3333 4444"
@@ -85,6 +90,7 @@
                     <input type="password" id="sec-code" name="sec-code" maxlength="3" placeholder="123" required>
                 </div>
                 <button type="submit">PAGAR</button>
+
             </form>
         </section>
     </main>

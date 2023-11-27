@@ -9,13 +9,26 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML'></script>
     <link rel="stylesheet" href="Integrales.css">
     <link rel="icon" href="Resources/logo.png">
-    <style>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
 
-    </style>
+    <link rel="stylesheet" href="">
+    <script>
+        function abrirVentanaEmergente() {
+            // Abre una nueva ventana emergente con el contenido de la página especificada
+            window.open('/index/calculadoras/index.html', 'PantallaEmergente', 'width=600,height=600,toolbar=0,menubar=0,location=0,status=0,resizable=0');
+        }
+        function abrirVentanaEmergente2() {
+            // Abre una nueva ventana emergente con el contenido de la página especificada
+            window.open('https://www.google.com.mx/', 'PantallaEmergente', 'width=600,height=600,toolbar=0,menubar=0,location=0,status=0,resizable=0');
+        }
+    </script>
+
 </head>
 
 <body>
 
+    <!-- Fondo oscuro detrás de la ventana emergente -->
+    <div id="overlay" class="overlay"></div>
     <header class=" text-white text-center py-1 cuchau" style="margin-bottom: 0%">
         <img src="Resources/logo.png" alt="Logo" class="header-logo">
 
@@ -70,34 +83,26 @@
 
                 <!-- Añadir un segundo carrusel -->
                 <div class="ContainerCenter">
-                    <!-- Radio Seleccionar para el segundo carrusel -->
                     <input type="radio" name="Carrusel2" id="Slider4" checked>
-                    <input type="radio" name="Carrusel2" id="Slider5">
-                    <input type="radio" name="Carrusel2" id="Slider6">
-
-                    <!-- Segundo Carrusel -->
                     <div class="Carrusels">
-                        <!-- Imagen contenido del segundo carrusel -->
-                        <a href="https://www.ejemplo.com" target="_blank">
-                            <div class="Carrusel" style="background-image: url(Resources/Integrales.png);"></div>
-                            <div class="Carrusel" style="background-image: url(Resources/Cientifica.png);"></div>
-                        </a>
-
-                        <!-- Flechas a la izquierda por cada imagen del segundo carrusel -->
-                        <label for="Slider6" class="ArrowLeft Arrow1">❮</label>
-                        <label for="Slider4" class="ArrowLeft Arrow2">❮</label>
-
-                        <!-- Flechas a la derecha por cada imagen del segundo carrusel -->
-                        <label for="Slider5" class="ArrowRight Arrow1">❯</label>
-                        <label for="Slider6" class="ArrowRight Arrow2">❯</label>
+                        <div class="Carrusel" style="background-image: url(Resources/Cientifica.png);"
+                            onclick="abrirVentanaEmergente()"> </div>
                     </div>
 
                     <!-- Selector circulos inferiores colgantes del segundo carrusel -->
-                    <div class="Selectors">
-                        <label for="Slider4" class="Selector"></label>
-                        <label for="Slider5" class="Selector"></label>
-                        <label for="Slider6" class="Selector"></label>
+
+                </div>
+                <br>
+                <!--Tercer Imagen-->
+                <div class="ContainerCenter">
+                    <input type="radio" name="Carrusel2" id="Slider4" checked>
+                    <div class="Carrusels">
+                        <div class="Carrusel" style="background-image: url(Resources/Integrales.png);"
+                            onclick="abrirVentanaEmergente2()"> </div>
                     </div>
+
+                    <!-- Selector circulos inferiores colgantes del segundo carrusel -->
+
                 </div>
             </center>
 
@@ -189,7 +194,8 @@
                         para calcular áreas y acumulaciones.<br> <br>
 
                     </p>
-                    <center><button class="Boton">Necesito Asesoría</button></center>
+                    <center><a href="/index/Servicio/servicio.html"><button class="Boton">Necesito Asesoría</button></a>
+                    </center>
                 </div>
             </main>
 
