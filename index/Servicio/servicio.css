@@ -22,7 +22,7 @@ body {
     flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(#e6e6e6, #bbbbbb);
+    background: linear-gradient(#33bdfd, #dff2ff);
     font-family: "Raleway", sans-serif;
 }
 
