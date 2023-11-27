@@ -34,7 +34,7 @@ function show2(divID) {
         } else {
             div.innerHTML = "Solución";
         }
-    } else { 
+    } else {
         chi.innerHTML = "Respuesta Incorrecta";
     }
 }
